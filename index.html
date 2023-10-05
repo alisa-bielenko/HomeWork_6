@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Checkout form</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-main">
+            <a class="header-logo" href="#">
+                <div class="header-logo-container">
+                    <img src="./img/icons/logo.png" alt="book read logo">
+                    <span>Raw Sushi</span>
+                </div>
+            </a>
+            <div class="basket">
+                <span>0,00 $</span>
+                <div class="catr-container">
+
+                    <button class="cart-btn"><img src="./img/icons/cart-icon.svg" alt="cart" class="cart-container-img">
+                        <p class="cart-counter">1</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <span class="active-category">Menu</span>
+            <ul class="header-list">
+                <li class="header-list-item"><a class="header-list-link" href="#">About</a></li>
+                <li class="header-list-item"><a class="header-list-link" href="#">Types of Sushi</a></li>
+                <li class="header-list-item"><a class="header-list-link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1 class="main-title">Placing an order</h1>
+
+        <form action="">
+            <section class="left-turn">
+                <div class="form-contacts">
+                    <h2 class="form-contacts-title">Your contact details</h2>
+
+                    <div class="input-container">
+                        <label for="first-name">First name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Your First Name"
+                            required>
+                        <button type="reset" title="Click me to clear the input field"><img
+                                src="./img/icons/reset.svg" alt="reset"></button>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="last-name">Last name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Your Last Name"
+                            required>
+                        <button type="reset" title="Click me to clear the input field"><img
+                                src="./img/icons/reset.svg" alt="reset"></button>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="phone">Mobile Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Mobile Number" required>
+                        <button type="reset" title="Click me to clear the input field"><img
+                                src="./img/icons/reset.svg" alt="reset"></button>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                        <button type="reset" title="Click me to clear the input field"><img
+                                src="./img/icons/reset.svg" alt="reset"></button>
+                    </div>
+                </div>
+
+                <div class="delivery">
+                    <div class="delivery-adress">
+                        <label for="delivery-adress">Delivery Аddress</label>
+                        <textarea name="delivery-adress" id="delivery-adress" cols="30" rows="10"
+                            placeholder="Your Delivery Аddress"></textarea>
+                    </div>
+
+                    <div class="delivery-day">
+                        <label for="delivery-day">Choose a convenient delivery day for you:</label>
+                        <input name="delivery-day" id="delivery-day" type="date">
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="delivery-comment">
+                        <label for="delivery-comment">Comment on the order</label>
+                        <textarea name="delivery-comment" id="delivery-comment" cols="30" rows="10"
+                            placeholder="Your Comment"></textarea>
+                    </div>
+                </div>
+
+                <div class="call">
+                    <div>
+                        <h2>Will you call to confirm the order?</h2>
+                        <span>We can call if you are ordering for the first time</span>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" name="choose" id="no">
+                        <label for="no">No, don't call me</label>
+                    </div>
+                    <div class="choose">
+                        <input type="radio" name="choose" id="yes">
+                        <label for="yes">Yes, call me</label>
+                    </div>
+                </div>
+
+                <div class="payment">
+                    <h2>Payment method</h2>
+                    <div class="choose">
+                        <input type="radio" name="payment" id="card">
+                        <label for="card">By card Visa, Mastercard or Privat24 by LiqPay</label>
+                    </div>
+
+                    <div class="choose">
+                        <input type="radio" name="payment" id="terminal">
+                        <label for="terminal">Terminal (payment by card upon receipt)</label>
+                    </div>
+
+                    <div class="choose">
+                        <input type="radio" name="payment" id="cash">
+                        <label for="cash">Cash on delivery</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="right-turn">
+                <h2 class="info-title">Your order</h2>
+                <div class="order">
+                    <img src="./img/order.png" alt="image" class="image">
+                    <div class="order-content">
+                        <div>
+                            <p class="order-title">Premium Sashimi Variety Pack</p>
+                            <span class="portion">(2) 8 Oz. Portions</span>
+                        </div>
+                        <div class="number">
+                            <span>-</span>
+                            <span>1</span>
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="price">42.95 $</span>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <div class="total-content">
+                        <span class="total-title">Total</span>
+                        <span class="price">42.95 $</span>
+                    </div>
+                </div>
+
+                <div class="confirm">
+                    <div class="checkbox">
+                        <input type="checkbox" id="agree" name="agree">
+                        <label for="agree">I agree to the processing of personal data</label>
+                    </div>
+                    <div class="btn">
+                        <button type="submit" class="submit">Submit</button>
+                        <button type="reset" class="reset">Reset</button>
+                    </div>
+                </div>
+
+            </section>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <span class="footer-year">© 2023</span>
+            <span class="footer-reserved">All rights reserved</span>
+        </div>
+    </footer>
+</body>
+
+</html>
